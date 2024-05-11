@@ -1,0 +1,17 @@
+<nav class="navigation-default">
+  <div class="nav-wrapper">
+
+    <div class="left-nav">
+      <a href="{{ url_for('home_blueprint.home') }}">💐 Mum Blog 💐</a>
+    </div>
+
+    <div class="right-nav">
+      {% if request.blueprint != 'profile_blueprint' %}
+        <a href="{{ url_for('profile_blueprint.profile') }}">My Account</a>
+      {% else %}
+        <a href="{{ url_for('home_blueprint.home') }}">Logout</a>
+      {% endif %}
+    </div>
+
+  </div>
+</nav>

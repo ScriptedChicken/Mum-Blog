@@ -1,0 +1,20 @@
+{% extends "base.jinja2" %}
+
+{% block pagestyles %}
+  {% assets "profile_style_bundle" %}
+    <link href="{{ ASSET_URL }}" rel="stylesheet" type="text/css">
+  {% endassets %}
+{% endblock %}
+
+{% block content %}
+  {% include "navigation.jinja2" %}
+
+  <div class="container">
+    <h1>Happy Mother's Day 2024 🌺🏵️🌹</h1>
+    <h2>Here's to the best Mum in the whole world!</h2>
+    <br>
+    <p>Who knows how you manage to do it all? Juggling everything, always making us feel listened to and supported, all of it. You deserve so much more than a website, but that will have to wait. Sending a BIG hug to you!</p>
+    <p>Lots of love from your geeky son. ❤️</p>
+  </div>
+
+{% endblock %}
